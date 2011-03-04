@@ -1,4 +1,4 @@
-package com.wordenskjold.utils.benchmarker;
+package com.wordenskjold.benchmarker;
 
 
 /**
@@ -32,12 +32,12 @@ public class BenchMarker {
 	
 	public BenchMarker(){}
 	
-	public void addBenchMarktoBenchmark(Benchmarkable toBenchmark){
+	public void addBenchmarkable(Benchmarkable toBenchmark){
 		this.toBenchmark = toBenchmark;
 		runnable = null;
 	}
 	
-	public void addBenchMarktoBenchmark(Runnable runnable){
+	public void addRunnable(Runnable runnable){
 		this.runnable = runnable;
 		toBenchmark = null;
 	}

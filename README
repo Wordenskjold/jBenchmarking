@@ -1,0 +1,16 @@
+ Simple Benchmarker for small running-time measurements.
+Pass a Runnable or a Benchmarkable to a BenchMarker object, and call start to measure the running time in ms of the method or runnable. 
+
+Example usage:
+
+new BenchMarker(new Runnable(){
+  public void run() {
+  // Do something!
+  }}).start();
+
+You can set the number of method executions manually:
+
+benchmarker.setAccuracy(20);
+benchmarker.start();
+
+Read more in the src for BenchMarker!
